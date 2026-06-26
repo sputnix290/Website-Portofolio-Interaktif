@@ -1,6 +1,22 @@
+# Virtual environments
 venv/
+venv_linux/
+**/venv/
+**/venv_linux/
+
+# Dependencies
+node_modules/
+.next/
+
+# Python cache
 __pycache__/
-db.sqlite3
-.env
-.DS_Store
 *.pyc
+
+# Database
+db.sqlite3
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
