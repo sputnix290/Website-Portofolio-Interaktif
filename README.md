@@ -1,21 +1,15 @@
 # 🚀 Interactive Portfolio Website
 
-Welcome to **My Interactive Portfolio** – a sleek, modern, and fully responsive web showcase built with **HTML**, **CSS**, and **JavaScript**. This project demonstrates a premium, glass‑morphism UI, vibrant gradients, smooth micro‑animations, and a dark‑mode ready design.
-
----
-
-## ✨ Live Demo
-
-[▶️ View Live Demo](https://example.com) *(replace with your actual URL)*
+Welcome to **My Interactive Portfolio** – a sleek, modern, and fully responsive web showcase built with **Next.js**, **django**, and **FastAPI**. This project demonstrates a premium, glass‑morphism UI, vibrant gradients, smooth micro‑animations, and a dark‑mode ready design.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Core**: HTML5, CSS3 (Vanilla), JavaScript (ES6+)
-- **Design**: Google Fonts – *Inter*, CSS custom properties, CSS Grid & Flexbox, glass‑morphism, dynamic hover effects
+- **Frontend**: Next.js (React), TypeScript, JavaScript (ES6+)
+- **Design**: Google Fonts – _Inter_, CSS custom properties, CSS Grid & Flexbox, glass‑morphism, dynamic hover effects
 - **Animations**: CSS transitions & keyframes, subtle motion for UI polish
-- **Build Tools**: Simple static site – no bundler required (feel free to integrate Vite later)
+- **Build Tools**: Node.js, npm/yarn for frontend; Docker & Python for Django backend
 
 ---
 
@@ -27,47 +21,62 @@ Welcome to **My Interactive Portfolio** – a sleek, modern, and fully responsiv
 - **Micro‑Animations** – hover lifts, button ripples, scroll‑reveal effects
 - **Section Navigation** – smooth scrolling & scroll‑spy highlighting
 - **Project Gallery** – interactive modal previews
-- **Contact Form** – client‑side validation (ready for backend integration)
+- **Desain**: Google Fonts – _Inter_, CSS custom properties, CSS Grid & Flexbox, glass‑morphism, efek hover dinamis
+- **Animasi**: Transisi CSS & keyframes, gerakan halus untuk polesan UI
+- **Build Tools**: Node.js, npm/yarn untuk frontend; Docker & Python untuk backend Django
 
 ---
 
-## 📸 Screenshots
+## 🎨 Fitur
 
-*(Replace the placeholders with actual screenshots or use the `generate_image` tool to create mock‑ups)*
-
-![Home Page Mockup](images/home_mockup.png)
+- **Layout Responsif** – tampilan optimal di ponsel, tablet, dan desktop
+- **Tema Gelap / Terang** – deteksi otomatis OS dengan opsi toggle manual
+- **Kartu Glass‑Morphism** – panel transparan futuristik dengan blur backdrop
+- **Mikro‑Animasi** – efek hover, ripple tombol, scroll‑reveal
+- **Navigasi Seksi** – scroll halus & penyorotan scroll‑spy
+- **Galeri Proyek** – preview interaktif dalam modal
+- **Form Kontak** – validasi sisi klien, siap terintegrasi dengan backend
 
 ---
 
-## 📦 Installation & Development
+## 📸 Screenshot
+
+![Tampilan web](Portofolio\frontend\public\tampilan.png)
+
+---
+
+## 📦 Instalasi & Pengembangan
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/interactive-portfolio.git
-cd interactive-portfolio
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
 
-# No dependencies required – open the file directly
-open index.html   # on macOS
-start index.html  # on Windows
-```
+# ----- Backend (Django) -----
+cd backend
+python -m venv venv
+# Activate virtual environment
+venv\Scripts\activate  # Windows
+# Install dependencies
+pip install -r requirements.txt
+# Apply migrations and start server
+python manage.py migrate
+python manage.py runserver  # http://127.0.0.1:8000/
 
-If you prefer a development server (optional):
-
-```bash
-# Using Vite (optional)
-npx -y create-vite-app@latest ./
-npm install
-npm run dev
+# ----- Frontend (Next.js) -----
+cd ../frontend
+npm install   # or yarn install
+npm run dev   # http://localhost:3000/
 ```
 
 ---
 
 ## 🧭 Usage
 
-1. Open `index.html` in your browser.
-2. Navigate using the top menu – sections animate into view.
-3. Click project cards to view details in a modal.
-4. Use the theme toggle in the header to switch between light & dark modes.
+1. Start the Django backend (`python manage.py runserver`) which serves the API at http://127.0.0.1:8000/
+2. Start the Next.js frontend (`npm run dev`) which runs at http://localhost:3000/
+3. Open the frontend URL in your browser to explore the portfolio.
+4. The frontend communicates with the backend API for dynamic data.
 
 ---
 
@@ -81,20 +90,3 @@ Contributions are welcome! Feel free to fork the repo and submit a pull request.
 4. Push and open a PR
 
 ---
-
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
----
-
-## 🧑‍💻 Author
-
-**[Your Name]** – *Frontend Engineer*
-
-- GitHub: [your‑username](https://github.com/your-username)
-- LinkedIn: [Your Name](https://linkedin.com/in/your-profile)
-
----
-
-*Crafted with ❤️ by Antigravity, your AI coding partner.*
