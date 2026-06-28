@@ -41,7 +41,7 @@ Welcome to **My Interactive Portfolio** – a sleek, modern, and fully responsiv
 
 ## 📸 Screenshot
 
-![Tampilan web]("frontend/public/tampilan.png")
+![Tampilan web](frontend/public/tampilan.png)
 
 ---
 
